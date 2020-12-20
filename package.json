@@ -1,7 +1,7 @@
 {
   "name": "tnb-cli",
-  "version": "1.0.1",
-  "description": "t-cli for everyone",
+  "version": "1.0.2",
+  "description": "tnb-cli for everyone",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,10 +10,14 @@
     "tnb": "./bin/tnb.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "TrickyPi",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TrickyPi/tnb-cli.git"
+  },
   "engines": {
-    "node":">=14.15.3"
+    "node": ">=14.15.3"
   },
   "devDependencies": {
     "chalk": "^4.1.0",
@@ -22,7 +26,6 @@
     "fs-extra": "^9.0.1",
     "inquirer": "^7.3.3",
     "os": "^0.1.1",
-    "prettier": "^2.2.1",
     "sharp": "^0.26.3"
   }
 }
