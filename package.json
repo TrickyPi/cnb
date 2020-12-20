@@ -1,6 +1,6 @@
 {
   "name": "tnb-cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "tnb-cli for everyone",
   "main": "index.js",
   "scripts": {
@@ -19,10 +19,9 @@
   "engines": {
     "node": ">=14.15.3"
   },
-  "devDependencies": {
+  "dependencies": {
     "chalk": "^4.1.0",
     "commander": "^6.2.1",
-    "crypto-js": "^4.0.0",
     "fs-extra": "^9.0.1",
     "inquirer": "^7.3.3",
     "os": "^0.1.1",
