@@ -1,6 +1,6 @@
 {
   "name": "tnb-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "t-cli for everyone",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
   "author": "",
   "license": "ISC",
   "engines": {
-    "node":"v14.15.3"
+    "node":">=14.15.3"
   },
   "devDependencies": {
     "chalk": "^4.1.0",
