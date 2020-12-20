@@ -1,5 +1,5 @@
 {
-  "name": "t-cli",
+  "name": "tnb-cli",
   "version": "1.0.0",
   "description": "t-cli for everyone",
   "main": "index.js",
@@ -7,11 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "tl": "./bin/tl.js"
+    "tnb": "./bin/tnb.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node":"v14.15.3"
+  },
   "devDependencies": {
     "chalk": "^4.1.0",
     "commander": "^6.2.1",
