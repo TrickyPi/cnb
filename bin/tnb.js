@@ -18,7 +18,7 @@ program
 //composite image to sprite
 program
     .command('gt')
-    .description('composite image to sprite')
+    .description('composite image to a sprite image')
     .action(gt)
 
 program.parse(process.argv)
