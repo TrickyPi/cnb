@@ -5,6 +5,7 @@
 <p align="center">
     <img src="https://img.shields.io/node/v/tnb-cli">
     <img src="https://img.shields.io/npm/v/tnb-cli">
+    <img src="https://img.shields.io/npm/dw/tnb-cli">
     <img src="https://img.shields.io/github/last-commit/TrickyPi/t-cli">
 </p>
 
@@ -21,3 +22,7 @@ $ npm i -g tnb-cli
 ## 🌟 Use
 * tnb ip
 * tnb gt
+
+## 优化
+
+目前`tnb gt`命令生成的雪碧图仅支持居中定位生成；希望后续有更多自定义选项

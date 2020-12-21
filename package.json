@@ -1,6 +1,6 @@
 {
   "name": "tnb-cli",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "tnb-cli for everyone",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   "bin": {
     "tnb": "./bin/tnb.js"
   },
-  "keywords": [],
+  "keywords": ["ip","generate"],
   "author": "TrickyPi",
   "license": "ISC",
   "repository": {
