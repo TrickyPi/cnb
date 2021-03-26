@@ -1,6 +1,6 @@
 {
   "name": "tnb-cli",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "tnb-cli for everyone",
   "main": "index.js",
   "scripts": {
