@@ -4,12 +4,12 @@ use std::str;
 
 fn inital_festival_map() -> HashMap<&'static str, &'static str> {
     HashMap::from([
-        ("Yuandan", "2022-01-01"),
-        ("Chunjie", "2022-01-31"),
-        ("Qingmin", "2022-04-01"),
+        ("Yuandan", "2023-01-01"),
+        ("Chunjie", "2022-02-01"),
+        ("Qingmin", "2022-04-05"),
         ("Wuyi", "2022-05-01"),
-        ("Duanwu", "2022-06-06"),
-        ("Zhongqiu", "2022-08-16"),
+        ("Duanwu", "2022-06-03"),
+        ("Zhongqiu", "2022-09-10"),
         ("Guoqing", "2022-10-1"),
     ])
 }
