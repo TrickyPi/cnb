@@ -1,7 +1,7 @@
 use structopt::StructOpt;
-use tnb_cli::img::{process_img, ImageOptions};
-use tnb_cli::ip::show_ip;
-use tnb_cli::relax::get_close_relax_time;
+use cnb::img::{process_img, ImageOptions};
+use cnb::ip::show_ip;
+use cnb::relax::get_close_relax_time;
 
 #[derive(StructOpt)]
 pub enum Command {
