@@ -25,13 +25,13 @@ jobs:
           target: x86_64-apple-darwin
 
       - name: Build for mac
-        run: cargo build --all --release && strip target/release/${{env.PROJECT_NAME}} && mv target/release/${{env.PROJECT_NAME}} target/release/${{env.PROJECT_NAME}}_darwin
+        run: cargo build --release
 
       - name: Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
           files: |
-            target/release/${{env.PROJECT_NAME}}_darwin
+            target/release/${{env.PROJECT_NAME}}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
