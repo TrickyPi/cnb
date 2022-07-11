@@ -5,7 +5,7 @@ cnb is a small tool for daily work.
 
 Shell(Mac, Linux)
 ```sh
-curl -fsSL https://github.com/TrickyPi/cnb/install/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/TrickyPi/cnb/master/install/install.sh | sh
 ```
 
 ## subcommand
