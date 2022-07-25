@@ -18,6 +18,7 @@ pub fn get_close_relax_time() {
     let now = Local::now();
     let festival = inital_festival_map();
     let mut closed_festival = "";
+    let mut festival_time = "";
     let mut min_max = i64::MAX;
     for (key, value) in festival {
         let mut temp = value.to_string();
@@ -37,6 +38,10 @@ pub fn get_close_relax_time() {
         }
         min_max = diff;
         closed_festival = key;
+        festival_time = value;
     }
-    println!("the closed relax time is {}", closed_festival);
+    println!(
+        "the closed relax time is {}, time is {}",
+        closed_festival, festival_time
+    );
 }
