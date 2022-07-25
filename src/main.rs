@@ -1,3 +1,4 @@
+use cnb::host::{host_change, HostOptions};
 use cnb::img::{process_img, ImageOptions};
 use cnb::ip::show_ip;
 use cnb::relax::get_close_relax_time;
@@ -11,6 +12,8 @@ pub enum Command {
     Relax,
     #[structopt(name = "img", about = "manipulate img")]
     Img(ImageOptions),
+    #[structopt(name = "host", about = "change host")]
+    Host(HostOptions),
 }
 
 #[derive(StructOpt)]
@@ -27,6 +30,7 @@ fn main() {
             show_ip();
         }
         Command::Relax => get_close_relax_time(),
-        Command::Img(image_options) => process_img(image_options)
+        Command::Img(image_options) => process_img(image_options),
+        Command::Host(host_options) => host_change(host_options),
     }
 }
