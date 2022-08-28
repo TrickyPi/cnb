@@ -26,14 +26,17 @@ jobs:
           profile: minimal
           target: ${{matrix.target}}
 
-      - name: Build for mac
-        run: cargo build --release
+      - name: Build
+        uses: actions-rs/cargo@v1
+        with:
+          command: build
+          args: --release --target ${{matrix.target}}
 
-      - name: Post Build
+      - name: Compress
         run: |
-          cd target/release/
+          cd target/${{matrix.target}}/release
           strip cnb
-          tar czvf ../../cnb-${{matrix.target}}.zip cnb
+          tar czvf ../../../cnb-${{matrix.target}}.zip cnb
 
       - name: Release
         uses: softprops/action-gh-release@v1
